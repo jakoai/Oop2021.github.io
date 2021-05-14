@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	html, body {
+	  margin: 0;
+		font-size: 20px;
+	}
+
+	.menu {
+	  margin: 2%;
+		background-color: gray;
+	}
+
+	.menu_buttons {
+		text-align: center;
+  	background-color: #008CBA;
+		color: white;
+		font-size: 200%;
+		cursor: pointer;
+	}
+
+	.page-content {
+		margin: 2%;
+	}
+
+	.menu_buttons:hover { background: #383; }
+
+</style>
+<head>
+<title>Rühmatööd</title>
+</head>
+<body align="center">
+
+<div class="menu">
+	<table align="center">
+	    <tr>
+				<td><button class="menu_buttons" onclick="menu(0)">Meist</button></td>
+		    <td><button class="menu_buttons" onclick="menu(1)">Esimene rühmatöö</button></td>
+		    <td><button class="menu_buttons" onclick="menu(2)">Teine rühmatöö</button></td>
+			</tr>
+	</table>
+</div>
+
+<div class="page-content">
+	<div id="menu0" align="left">
+		<h1>Meist</h1>
+		<h2>Kes me oleme?</h2>
+		<p>
+			Meie oleme Laur Edvard Lindmaa ja Jako Aimsalu</br>
+			Õpime Tartu ülikoolis Arvutitehnika bakalaureuse 1. aasta.</br>
+			<b>Meie vihkame JAVA't</b> (no offense)
+		</p>
+
+		<h2>Mida me tootsime?</h2>
+		<p>
+			Meie proovisime luua tuntud arvuti- ja lauamänge kasutades JAVA't.
+		</p>
+		<p>
+			<a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)"><b>Minesweepe</b></a>
+			 - arvutimäng, kus on vaja teha midagi</br>
+			<a href="https://en.wikipedia.org/wiki/Chess"><b>Male</b></a>
+			 - traditsioniline lauamäng, kus saab alati kotti.
+		</p>
+	</div>
+
+	<div id="menu1" hidden>
+		<h1>Minesweeper</h1>
+	</div>
+
+	<div id="menu2" hidden>
+		<h1>Male</h1>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function menu(index) {
+		for (var i = 0; i <= 2; i++) {
+			document.getElementById("menu"+i).style.display = "None";
+		}
+		document.getElementById("menu"+index).style.display = "block";
+	}
+</script>
+
+</body>
+</html>

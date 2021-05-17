@@ -59,19 +59,18 @@
 		<h2>Kes me oleme?</h2>
 		<p>
 			Meie oleme Laur Edvard Lindmaa ja Jako Aimsalu</br>
-			Õpime Tartu ülikoolis Arvutitehnika bakalaureuse 1. aasta.</br>
-			<b>Meie vihkame Java't</b> (no offense)
+			Oleme Tartu ülikooli Arvutitehnika bakalaureuse 1. aasta tudengid.</br>
 		</p>
 
 		<h2>Mida me tootsime?</h2>
 		<p>
-			Meie proovisime luua tuntud arvuti- ja lauamänge kasutades Java't.
+			Proovisime luua tuntud arvuti- ja lauamänge kasutades Java't.
 		</p>
 		<p>
-			<a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)"><b>Minesweepe</b></a>
-			 - arvutimäng, kus on vaja teha midagi</br>
+			<a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)"><b>Minesweeper</b></a>
+			 - arvutimäng, kus on vaja mänguväli puhastada miinidest ilma ise ühelegi peale astumata</br>
 			<a href="https://en.wikipedia.org/wiki/Chess"><b>Male</b></a>
-			 - traditsioniline lauamäng, kus saab alati kotti.
+			 - traditsioniline lauamäng.
 		</p>
 	</div>
 
@@ -82,16 +81,15 @@
 		<h2>Kirjeldus</h2>
 		<p>
 			Tundub esialgu lihtne mäng, mida implementeerida graafilisele liidesele.</br>
-			Meie aga tegime asja palju keerulisemaks ja lõime console-base Minesweeperi.</br>
+			Meie aga tegime asja palju keerulisemaks ja lõime console-based Minesweeperi.</br>
 			Asja teeb keeruliseks kasutaja sisendi saamine, et ei peaks enterit pidevalt vajutama.</br>
 			Selleks lahenduseks sai ajutise akna loomine, mis võimaldab võtta kasutajalt reaalajas klaviatuuri sisendit,</br>
 			tingimusel, et loodud aken oleks pidevalt aktiivne.</br>
 
 			Konsooli visuaalse poole värviliseks loomisel sai kasutatud <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escape code</a>, aga...</br>
-			<p><b>K***** Windows!</b></p>
-			Kahjuks selgus, et Windowsi konsoolid ei toeata vaikimisi ASNI koode ja see tuleb eraldi modifitseerides registrit, ÕUDNE...</br>
-			Täpsem juhend selle kohta	<a href="https://superuser.com/questions/413073/windows-console-with-ansi-colors-handling">siit</a>, see kehtib nii "Powershell" kui ka "Command Prompti" kohta</br>
-			Siit loo moraal, ärge kasutade Javat ega Windowsit.
+			Kahjuks selgus, et Windowsi konsoolid ei toeta vaikimisi ASNI koode ja see tuleb eraldi registrit modifitseerides lubada.</br>
+			Täpsem juhend selle kohta <a href="https://superuser.com/questions/413073/windows-console-with-ansi-colors-handling">siit</a>, see kehtib nii "Powershell" kui ka "Command Prompti" kohta</br>
+			Siit loo moraal: ärge kasutage Windowsit.
 		</p>
 
 		<h2>Lõpptulemus</h2>
@@ -102,37 +100,35 @@
 				</p>
 				<p>
 					<h3>Peamenüü</h3>
-					Peamenüüst on võimalilk nooleklahvidega valida mängulaua raskustase.
+					Peamenüüst on võimalik nooleklahvidega valida mängulaua raskustaset.
 					<ul>
 					  <li><b>Lihtne</b> (easy) - mänguvälja maatriksi suurus 9x9 ruutu, kokku 10 miini</li>
 					  <li><b>Keskmine</b> (medium) - mänguvälja maatriksi suurus 16x16 ruutu, kokku 40 miini</li>
 					  <li><b>Raske</b> (hard) - mänguvälja maatriksi suurus 30x16 ruutu, kokku 99 miini</li>
 					</ul>
-					Muidugi saab sulgeda valides "Exit".
+					Mängu saab sulgeda valides "Exit".
 				</p>
 				<p>
 					<h3>Mängimine</h3>
-					Kursori navigeerimiseks kasutatakse nooleklahve ja miinide märkmised (ka eemaldamiseks) soovikorral "F" klahvi.
-					Ala avastamiseks tuleb vajutada "Enter" klahvi. Kui hästi läheb saad teada teiste miinide asukoha. Halvemal juhul koperdad miini otsa.
+					Kursori navigeerimiseks kasutatakse nooleklahve ja miinide märkmise (ja eemaldamise) korral "F" klahvi.
+					Ala avastamiseks tuleb vajutada "Enter" klahvi. Kui hästi läheb, saad teada teiste miinide asukoha. Halvemal juhul koperdad miini otsa.
 					<ul>
 					  <li><b>Valge ruut</b> - tähistab hetkel kursori asukohta</li>
 					  <li><b>Hallid ruudud</b> - tähistavad avastamata alasid</li>
 					  <li><b>Numbrid</b> - näitavad mitu miini on antud ruudu ümbruses</li>
-						<li><b>Punased ruudud</b> - märked võimalikust miini asukohast (pole kohustuslik)</li>
+						<li><b>Punased ruudud</b> - Mängija pandud lipud</li>
 						<li><b>Mängu lõppedes "o"</b> tähised (ilmub ainult, kui astuti miini otsa) - näitab kõigi teadmata miinide asukoha</li>
 					</ul>
-					Eduka mängu lõppedes kuvatakse all veel kulunud aega.</br></br>
-
-					 <b>Mäng tuli edukas, kuna selle peale on võimalik närvi minna.</b>
+					Eduka mängu lõppedes kuvatakse all ka kulunud aega.</br></br>
 				</p>
 			</div>
 		  <div class="column" align="center">
 				<img src="Minesweeper-Menu.png" alt="Minesweeperi menüü"></br>
 				<i>Peamenüü, võimalus valida erinevaid raskustasemeid.</i></br>
 				<img src="Minesweeper-Gameplay.png" alt="Minesweeperi mängimine"></br>
-				<i>Mängu laud, punaselt on märgistatud pommid ja valgelt kursor.</i></br>
+				<i>Mängulaud, punaselt on märgistatud pommid ja valgelt kursor.</i></br>
 				<img src="Minesweeper-Failure.png" alt="Minesweeperi miinile astumine"></br>
-				<i>Mängu lõpp seis (astuti miini peale)</i>
+				<i>Mängu lõppseis (astuti miinile)</i>
 			</div>
 		</div>
 	</div>
@@ -142,10 +138,10 @@
 		<p>
 			<b>Source code: </b><a href="https://github.com/jakoai/Oop2021.github.io/blob/main/Male.zip">https://github.com/jakoai/Oop2021.github.io/blob/main/Male.zip</a></br>
 			<h2>Kirjeldus</h2>
-			Tegu on tradistioonilise lauamänguga, mille mängureegleid ei pea selgitama (kes ei oska, see googledab).</br>
-			Esmapilgus tundub olevad üpris kerge mänguga, mida luua... EI, ei ole lihtne.</br>
+			Tegu on traditsioonilise lauamänguga, mille mängureegleid ei pea selgitama (kes ei oska, see googledab).</br>
+			Esmapilgus tundub olevat üpris kerge mänguga, mida luua, kuid tegelikkus on vastupidine.</br>
 			Mängulaud on küll välimuselt lihtne, kuid nuppude käimise loogika on tõeline peavalu.</br>
-			Selle teeb keeruliseks En passant, vangerdamine, kuniga tuli ja nupude käimine, et ei tekiks tuld.</br>
+			Selle teeb keeruliseks En passant, vangerdamine, kuninga tuli ja nupude käimine, et ei tekiks tuld.</br>
 			Lahendamine on võimalik vaadates üle praktiliselt kõik kombinatsioonid, kuhu on võimalik käia, ja vaadates, et see poleks vastuolus võimaliku tulega.</br>
 			Et muuta mängu mängimist keerukamaks implementeerisime vastaseks ka pädeva arvuti, kasutades ära <a href="https://chesshub.com/analysis/new">Chesshub'i</a>.</br>
 			</br>
@@ -155,11 +151,11 @@
 			<div class="row">
 			  <div class="column">
 					<p>
-						Valmis mittetäielik male mäng, kuid kõikide põhiliste funktsioonidega.
+						Valmis mäng, mida on võimalik mängida.
 					</p>
 					<p>
 						<h3>Peamenüü</h3>
-						Peamenüüst on võimalilk hiirega vastaseks erinevat tüüpi arvuti või kaasmängija.
+						Peamenüüst on võimalilk hiirega vastaseks valida erinevat tüüpi arvuti või kaasmängija.
 						Kui soovitu on sinine, on valik võimalik kinnitada hiire vasakkliki või klaviatuuri enteriga.
 						<ul>
 						  <li><b>Computer easy</b> - vastaseks arvuti reitinguga 600</li>
@@ -173,8 +169,8 @@
 					<p>
 						<h3>Mängimine</h3>
 						Akna tiitlil on näha kelle kord antud hetkel on.
-						Esmalt hiirega märkida, millist nuppu soovitakse liigutada ja teiseks kuhu liigutada.
-						Kui vastaseks on arvuti on nupu liigutamine kerge viivitusega.</br>
+						Esmalt tuleb hiirega märkida, millist nuppu soovitakse liigutada ja teiseks kuhu.
+						Kui vastaseks on arvuti, on nupu liigutamine kerge viivitusega.</br>
 						</br>
 						Ülevaade võimalikest nupu taustavärvidest:
 						<ul>
@@ -187,14 +183,14 @@
 						Mängu lõppedes tuleb ekraanile ja akna tiitlile kirjeldus, kes võitis või viik.</br>
 						Peamenüüsse naasmiseks on vaja lihtsalt hiirega vajutada mänguväljale.</br>
 						</br>
-						<b>Mäng tuli edukas, kuna arvuti vastu mängimine ajab kettasse.</b>
+						<b>Mäng tuli edukas, kuna arvuti vastu mängimine töötab liiga hästi.</b>
 					</p>
 				</div>
 			  <div class="column" align="center">
 					<img src="Chess-Menu.png" alt="Male menüü"></br>
 					<i>Peamenüü, võimalus valida erinevaid vastaseid.</i></br>
 					<img src="Chess-Gameplay.png" alt="Male mängimine"></br>
-					<i>Mängu laud, kus vastaseks hetkel arvuti.</i></br>
+					<i>Mängulaud, kus vastaseks hetkel arvuti.</i></br>
 					<img src="Chess-Failure.png" alt="Male kaotamine (must võitis)"></br>
 					<i>Mängu lõpp (must võitis)</i>
 				</div>
